@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFD62"
+    tools:context=".MainActivity" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="414dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="610dp"
+        android:background="#FBFBFB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="156dp"
+            android:layout_height="71dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ust_logo" />
+
+        <TextView
+            android:id="@+id/titleproj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="90dp"
+            android:fontFamily="monospace"
+            android:text="Grade Tracker"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/titleproj2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="118dp"
+            android:fontFamily="monospace"
+            android:text="for UST College Students"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleproj" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="61dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="33dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13"
+        app:srcCompat="@drawable/sign_up" />
+
+    <Button
+        android:id="@+id/signupbtn"
+        android:layout_width="111dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="119dp"
+        android:backgroundTint="#0B0A0A"
+        android:onClick="toSIGNUP"
+        android:text="Sign Up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginbtn" />
+
+    <Button
+        android:id="@+id/usebtn"
+        android:layout_width="113dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="116dp"
+        android:backgroundTint="#0B0A0A"
+        android:onClick="toMANUAL"
+        android:text="App Manual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupbtn" />
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="111dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="98dp"
+        android:layout_marginEnd="119dp"
+        android:backgroundTint="#0B0A0A"
+        android:onClick="toLOGIN"
+        android:text="Log In"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="61dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="89dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:srcCompat="@drawable/login" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="129dp"
+        android:layout_height="127dp"
+        android:layout_marginStart="68dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupbtn"
+        app:srcCompat="@drawable/manual" />
+
+    <TextView
+        android:id="@+id/developed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="79dp"
+        android:fontFamily="monospace"
+        android:text="Developed By:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+
+    <TextView
+        android:id="@+id/developed2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="131dp"
+        android:fontFamily="monospace"
+        android:text="Andrei Alvarico"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/developed" />
+
+    <TextView
+        android:id="@+id/developed3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="72dp"
+        android:fontFamily="monospace"
+        android:text="Earl Tristan Isidro"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
