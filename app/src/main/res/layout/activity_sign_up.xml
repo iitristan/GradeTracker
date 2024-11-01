@@ -12,19 +12,9 @@
         android:layout_width="414dp"
         android:layout_height="123dp"
         android:layout_marginStart="1dp"
-        android:layout_marginBottom="610dp"
         android:background="#FBFBFB"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <ImageView
-            android:id="@+id/imageView10"
-            android:layout_width="156dp"
-            android:layout_height="71dp"
-            android:layout_marginTop="24dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ust_logo" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/titleproj"
@@ -37,6 +27,14 @@
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="156dp"
+            android:layout_height="71dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ust_logo" />
 
         <TextView
             android:id="@+id/titleproj2"
@@ -55,8 +53,8 @@
         android:id="@+id/courseslabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="236dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="112dp"
         android:fontFamily="monospace"
         android:text="Sign Up"
         android:textSize="20sp"
@@ -67,73 +65,16 @@
         android:id="@+id/imageView3"
         android:layout_width="70dp"
         android:layout_height="91dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="12dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
         app:srcCompat="@drawable/sign_up" />
 
-    <EditText
-        android:id="@+id/editTextText3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="100dp"
-        android:layout_marginBottom="120dp"
-        android:ems="10"
-        android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/confirmpass"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <TextView
-        android:id="@+id/confirmpass"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="136dp"
-        android:layout_marginBottom="64dp"
-        android:fontFamily="monospace"
-        android:text="Confirm Password"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@+id/signup2btn"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextTextPassword2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="96dp"
-        android:layout_marginBottom="20dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/signup2btn"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <TextView
-        android:id="@+id/passwordlabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="96dp"
-        android:layout_marginEnd="144dp"
-        android:fontFamily="monospace"
-        android:text="Enter Password"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
-
-    <Button
-        android:id="@+id/signup2btn"
-        android:layout_width="123dp"
-        android:layout_height="66dp"
-        android:layout_marginEnd="144dp"
-        android:layout_marginBottom="60dp"
-        android:backgroundTint="#0B0A0A"
-        android:text="Sign Up"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
     <ImageView
         android:id="@+id/back3"
-        android:layout_width="57dp"
-        android:layout_height="62dp"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
         android:layout_marginStart="32dp"
         android:layout_marginBottom="24dp"
         android:onClick="toMENU"
@@ -141,50 +82,108 @@
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/bacl" />
 
-    <TextView
-        android:id="@+id/usernamelabel3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="144dp"
-        android:layout_marginTop="104dp"
-        android:fontFamily="monospace"
-        android:text="Student Number"
-        android:textSize="15sp"
+
+    <Button
+        android:id="@+id/signup2button"
+        android:layout_width="126dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#0E0E0E"
+        android:text="Sign Up"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
-    <EditText
-        android:id="@+id/editTextText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="104dp"
-        android:layout_marginBottom="200dp"
-        android:ems="10"
-        android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/confirmpass"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextTextPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="100dp"
-        android:layout_marginBottom="36dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/confirmpass"
-        app:layout_constraintEnd_toEndOf="parent" />
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="354dp"
+        android:layout_height="370dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@drawable/recirc" />
 
     <TextView
-        android:id="@+id/usernamelabel"
+        android:id="@+id/labelusername4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="148dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="136dp"
         android:fontFamily="monospace"
         android:text="Enter Username"
-        android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/etusername"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="96dp"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelusername4" />
+
+    <EditText
+        android:id="@+id/etsnu"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="96dp"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelsnu2" />
+
+    <TextView
+        android:id="@+id/labelpasswd2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="139dp"
+        android:fontFamily="monospace"
+        android:text="Enter Password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etsnu" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="230dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="79dp"
+        android:fontFamily="casual"
+        android:text="The password should be at least 8 characters long and include a lowercase letter, an uppercase letter, a number, and a special character."
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etpasswd" />
+
+    <TextView
+        android:id="@+id/labelsnu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="112dp"
+        android:fontFamily="monospace"
+        android:text="Enter Student Number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etusername" />
+
+    <EditText
+        android:id="@+id/etpasswd"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="96dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelpasswd2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

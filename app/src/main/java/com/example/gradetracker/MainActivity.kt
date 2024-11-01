@@ -1,5 +1,6 @@
 package com.example.gradetracker
 
+
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -22,4 +23,5 @@ class MainActivity : AppCompatActivity() {
         val i = Intent(this,Manual::class.java)
         startActivity(i)
     }
+
 }

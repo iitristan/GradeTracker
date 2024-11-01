@@ -4,29 +4,48 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
+import android.widget.EditText
+import android.widget.Toast
 
 class Login : AppCompatActivity() {
+
+    private lateinit var etuser: EditText
+    private lateinit var etPassL: EditText
+    private lateinit var databaseHandler: CombinedDatabase
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        val signUp = findViewById<Button>(R.id.signup2btn2)
+        // Initialize EditTexts
+        etuser = findViewById(R.id.etusername2)
+        etPassL = findViewById(R.id.etpasswd2)
 
-        signUp.setOnClickListener {
-            val i = Intent(this, SignUp::class.java)
-            startActivity(i)
-            finish()
-        }
+        // Initialize DatabaseHandler
+        databaseHandler = CombinedDatabase(this)
+    }
 
-        fun toMENU(view: View) {
-            val i = Intent(this, MainActivity::class.java)
-            startActivity(i)
-        }
+    fun login(view: View) {
+        val uname = etuser.text.toString()
+        val pword = etPassL.text.toString()
 
-        fun toYEARLEVEL(view: View) {
-            val i = Intent(this, YearLevel::class.java)
-            startActivity(i)
+        if (uname.trim().isNotEmpty() && pword.trim().isNotEmpty()) {
+            val user = databaseHandler.getUser(uname, pword)
+
+            if (user != null) {
+                Toast.makeText(this, "You have successfully logged in!", Toast.LENGTH_SHORT).show()
+                val u = Intent(this, ViewListContents::class.java)
+                startActivity(u)
+            } else {
+                Toast.makeText(this, "Incorrect Username or Password", Toast.LENGTH_SHORT).show()
+            }
+        } else {
+            Toast.makeText(this, "Username and Password are required", Toast.LENGTH_SHORT).show()
         }
+    }
+
+    fun toMENU(view: View) {
+        val i = Intent(this, MainActivity::class.java)
+        startActivity(i)
     }
 }

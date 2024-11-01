@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFD62">
+
+    <TextView
+        android:id="@+id/textView59"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="122dp"
+        android:fontFamily="monospace"
+        android:text="Accumalated Average:"
+        android:textColor="#020202"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CBY4S2" />
+
+    <TextView
+        android:id="@+id/textViewAverageGWA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="179dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="182dp"
+        android:fontFamily="monospace"
+        android:text="0.0"
+        android:textColor="#070707"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView59" />
+
+    <TextView
+        android:id="@+id/textView58"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="104dp"
+        android:fontFamily="monospace"
+        android:text="4th Year"
+        android:textColor="#070707"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CBY3S2" />
+
+    <CheckBox
+        android:id="@+id/CBY4S1"
+        android:layout_width="142dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="31dp"
+        android:buttonTint="#101010"
+        android:fontFamily="monospace"
+        android:text="Semester 1"
+        android:textColor="#0E0E0E"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView58" />
+
+    <CheckBox
+        android:id="@+id/CBY4S2"
+        android:layout_width="142dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="31dp"
+        android:buttonTint="#0B0A0A"
+        android:fontFamily="monospace"
+        android:text="Semester 2"
+        android:textColor="#0E0E0E"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CBY4S1" />
+
+    <CheckBox
+        android:id="@+id/CBY2S2"
+        android:layout_width="127dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="70dp"
+        android:buttonTint="#050505"
+        android:fontFamily="monospace"
+        android:text="Semester 2"
+        android:textColor="#070707"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CBY2S1" />
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="64dp"
+        android:fontFamily="monospace"
+        android:text="2nd Year"
+        android:textColor="#0E0E0E"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CBY1S2" />
+
+    <CheckBox
+        android:id="@+id/CBY2S1"
+        android:layout_width="131dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="68dp"
+        android:buttonTint="#090909"
+        android:fontFamily="monospace"
+        android:text="Semester 1"
+        android:textColor="#090908"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView49" />
+
+    <CheckBox
+        android:id="@+id/CBY3S2"
+        android:layout_width="142dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="29dp"
+        android:buttonTint="#0B0A0A"
+        android:fontFamily="monospace"
+        android:text="Semester 2"
+        android:textColor="#070707"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CBY3S1" />
+
+    <CheckBox
+        android:id="@+id/CBY3S1"
+        android:layout_width="142dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="31dp"
+        android:buttonTint="#101010"
+        android:fontFamily="monospace"
+        android:text="Semester 1"
+        android:textColor="#070707"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView48" />
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="104dp"
+        android:fontFamily="monospace"
+        android:text="3rd Year"
+        android:textColor="#050505"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gwalabel3" />
+
+    <CheckBox
+        android:id="@+id/CBY1S2"
+        android:layout_width="129dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="68dp"
+        android:buttonTint="#131313"
+        android:fontFamily="monospace"
+        android:text="Semester 2"
+        android:textColor="#0E0E0E"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CBY1S1" />
+
+    <CheckBox
+        android:id="@+id/CBY1S1"
+        android:layout_width="130dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="67dp"
+        android:buttonTint="#0B0A0A"
+        android:fontFamily="monospace"
+        android:text="Semester 1"
+        android:textColor="#070707"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/gwalabel3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="44dp"
+        android:fontFamily="monospace"
+        android:text="GWA Computation"
+        android:textColor="#0E0E0E"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="72dp"
+        android:fontFamily="monospace"
+        android:text="1st Year"
+        android:textColor="#050505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gwalabel3" />
+
+    <ImageView
+        android:id="@+id/back7"
+        android:layout_width="74dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="19dp"
+        android:onClick="toCourseList"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bacl" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="92dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="31dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/grade" />
+</androidx.constraintlayout.widget.ConstraintLayout>

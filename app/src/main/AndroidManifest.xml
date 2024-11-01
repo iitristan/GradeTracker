@@ -13,8 +13,20 @@
         android:theme="@style/Theme.GradeTracker"
         tools:targetApi="31">
         <activity
+            android:name=".GWA_computation2"
+            android:exported="false" />
+        <activity
+            android:name=".AccountSettings"
+            android:exported="false" />
+        <activity
+            android:name=".GWA_computation"
+            android:exported="false" />
+        <activity
             android:name=".coursegradecomputation"
             android:exported="false" />
+
+        <activity android:name=".GWAComputation" />
+
         <activity
             android:name=".Courses"
             android:exported="false" />
@@ -36,9 +48,16 @@
         <activity
             android:name=".Login"
             android:exported="false" />
+        <activity android:name=".ViewListContents" />
+        <activity
+            android:name=".AddCourses"
+            android:label="Add Courses">
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">
+
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
